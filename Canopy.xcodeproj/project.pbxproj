@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C70D2873289EAAFE007A4F30 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D2872289EAAFE007A4F30 /* CardView.swift */; };
+		C731789D289C38B10036DD8D /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731789C289C38B10036DD8D /* RecipeData.swift */; };
+		C7376662289C4F2500A71929 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7376661289C4F2500A71929 /* RecipeDetailView.swift */; };
+		C7376664289C7DAF00A71929 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7376663289C7DAF00A71929 /* AppColor.swift */; };
+		C781DAEF289EB0AF0084A915 /* RecipeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */; };
+		C797A987288E0098000FE4FA /* CanopyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797A986288E0098000FE4FA /* CanopyApp.swift */; };
+		C797A989288E0098000FE4FA /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797A988288E0098000FE4FA /* RecipesListView.swift */; };
+		C797A98B288E0099000FE4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C797A98A288E0099000FE4FA /* Assets.xcassets */; };
+		C797A98E288E0099000FE4FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C797A98D288E0099000FE4FA /* Preview Assets.xcassets */; };
+		C797A995288E00C6000FE4FA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797A994288E00C6000FE4FA /* Recipe.swift */; };
+		C7BEA47B289F3DCE0058755B /* LottieFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BEA47A289F3DCE0058755B /* LottieFiles.swift */; };
+		C7BEA47E289F3EA90058755B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7BEA47D289F3EA90058755B /* Lottie */; };
+		C7BEA482289F418C0058755B /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BEA480289F418C0058755B /* recipes.json */; };
+		C7BEA483289F418C0058755B /* recipe-book.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BEA481289F418C0058755B /* recipe-book.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C70D2872289EAAFE007A4F30 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C731789C289C38B10036DD8D /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		C7376661289C4F2500A71929 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		C7376663289C7DAF00A71929 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryView.swift; sourceTree = "<group>"; };
+		C797A983288E0098000FE4FA /* Canopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C797A986288E0098000FE4FA /* CanopyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanopyApp.swift; sourceTree = "<group>"; };
+		C797A988288E0098000FE4FA /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
+		C797A98A288E0099000FE4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C797A98D288E0099000FE4FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C797A994288E00C6000FE4FA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		C7BEA47A289F3DCE0058755B /* LottieFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFiles.swift; sourceTree = "<group>"; };
+		C7BEA480289F418C0058755B /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = ../../../../../../Downloads/recipes.json; sourceTree = "<group>"; };
+		C7BEA481289F418C0058755B /* recipe-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "recipe-book.json"; path = "../../../../../../Downloads/recipe-book.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C797A980288E0098000FE4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BEA47E289F3EA90058755B /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C70D2871289EAAE8007A4F30 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				C70D2872289EAAFE007A4F30 /* CardView.swift */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		C7317899289C35120036DD8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C797A988288E0098000FE4FA /* RecipesListView.swift */,
+				C7376661289C4F2500A71929 /* RecipeDetailView.swift */,
+				C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C731789A289C358F0036DD8D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C731789C289C38B10036DD8D /* RecipeData.swift */,
+				C7376663289C7DAF00A71929 /* AppColor.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C731789B289C359A0036DD8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C797A994288E00C6000FE4FA /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C797A97A288E0098000FE4FA = {
+			isa = PBXGroup;
+			children = (
+				C797A985288E0098000FE4FA /* Canopy */,
+				C797A984288E0098000FE4FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C797A984288E0098000FE4FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C797A983288E0098000FE4FA /* Canopy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C797A985288E0098000FE4FA /* Canopy */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEA47F289F41440058755B /* LottieFiles */,
+				C70D2871289EAAE8007A4F30 /* Submodules */,
+				C731789B289C359A0036DD8D /* Models */,
+				C7317899289C35120036DD8D /* Views */,
+				C731789A289C358F0036DD8D /* ViewModels */,
+				C797A986288E0098000FE4FA /* CanopyApp.swift */,
+				C797A98A288E0099000FE4FA /* Assets.xcassets */,
+				C797A98C288E0099000FE4FA /* Preview Content */,
+			);
+			path = Canopy;
+			sourceTree = "<group>";
+		};
+		C797A98C288E0099000FE4FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C797A98D288E0099000FE4FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7BEA47F289F41440058755B /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7BEA481289F418C0058755B /* recipe-book.json */,
+				C7BEA480289F418C0058755B /* recipes.json */,
+				C7BEA47A289F3DCE0058755B /* LottieFiles.swift */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C797A982288E0098000FE4FA /* Canopy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C797A991288E0099000FE4FA /* Build configuration list for PBXNativeTarget "Canopy" */;
+			buildPhases = (
+				C797A97F288E0098000FE4FA /* Sources */,
+				C797A980288E0098000FE4FA /* Frameworks */,
+				C797A981288E0098000FE4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Canopy;
+			packageProductDependencies = (
+				C7BEA47D289F3EA90058755B /* Lottie */,
+			);
+			productName = Canopy;
+			productReference = C797A983288E0098000FE4FA /* Canopy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C797A97B288E0098000FE4FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C797A982288E0098000FE4FA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C797A97E288E0098000FE4FA /* Build configuration list for PBXProject "Canopy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C797A97A288E0098000FE4FA;
+			packageReferences = (
+				C7BEA47C289F3EA90058755B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = C797A984288E0098000FE4FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C797A982288E0098000FE4FA /* Canopy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C797A981288E0098000FE4FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BEA483289F418C0058755B /* recipe-book.json in Resources */,
+				C797A98E288E0099000FE4FA /* Preview Assets.xcassets in Resources */,
+				C7BEA482289F418C0058755B /* recipes.json in Resources */,
+				C797A98B288E0099000FE4FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C797A97F288E0098000FE4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C797A995288E00C6000FE4FA /* Recipe.swift in Sources */,
+				C7BEA47B289F3DCE0058755B /* LottieFiles.swift in Sources */,
+				C7376662289C4F2500A71929 /* RecipeDetailView.swift in Sources */,
+				C731789D289C38B10036DD8D /* RecipeData.swift in Sources */,
+				C797A989288E0098000FE4FA /* RecipesListView.swift in Sources */,
+				C781DAEF289EB0AF0084A915 /* RecipeCategoryView.swift in Sources */,
+				C797A987288E0098000FE4FA /* CanopyApp.swift in Sources */,
+				C70D2873289EAAFE007A4F30 /* CardView.swift in Sources */,
+				C7376664289C7DAF00A71929 /* AppColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C797A98F288E0099000FE4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C797A990288E0099000FE4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C797A992288E0099000FE4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Canopy/Preview Content\"";
+				DEVELOPMENT_TEAM = S6R55N8Z8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karteikaydhuper.Canopy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C797A993288E0099000FE4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Canopy/Preview Content\"";
+				DEVELOPMENT_TEAM = S6R55N8Z8S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karteikaydhuper.Canopy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C797A97E288E0098000FE4FA /* Build configuration list for PBXProject "Canopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C797A98F288E0099000FE4FA /* Debug */,
+				C797A990288E0099000FE4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C797A991288E0099000FE4FA /* Build configuration list for PBXNativeTarget "Canopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C797A992288E0099000FE4FA /* Debug */,
+				C797A993288E0099000FE4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7BEA47C289F3EA90058755B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7BEA47D289F3EA90058755B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BEA47C289F3EA90058755B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C797A97B288E0098000FE4FA /* Project object */;
+}
