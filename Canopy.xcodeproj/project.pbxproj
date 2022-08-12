@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C70D2873289EAAFE007A4F30 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D2872289EAAFE007A4F30 /* CardView.swift */; };
+		C725F8F728A002C1004A99F0 /* ModifyRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725F8F628A002C1004A99F0 /* ModifyRecipeView.swift */; };
 		C731789D289C38B10036DD8D /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C731789C289C38B10036DD8D /* RecipeData.swift */; };
 		C7376662289C4F2500A71929 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7376661289C4F2500A71929 /* RecipeDetailView.swift */; };
 		C7376664289C7DAF00A71929 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7376663289C7DAF00A71929 /* AppColor.swift */; };
+		C746CDF728A2C86E00C79D57 /* ModifyComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746CDF628A2C86E00C79D57 /* ModifyComponentsView.swift */; };
 		C781DAEF289EB0AF0084A915 /* RecipeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */; };
 		C797A987288E0098000FE4FA /* CanopyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797A986288E0098000FE4FA /* CanopyApp.swift */; };
 		C797A989288E0098000FE4FA /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797A988288E0098000FE4FA /* RecipesListView.swift */; };
@@ -21,13 +23,18 @@
 		C7BEA47E289F3EA90058755B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C7BEA47D289F3EA90058755B /* Lottie */; };
 		C7BEA482289F418C0058755B /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BEA480289F418C0058755B /* recipes.json */; };
 		C7BEA483289F418C0058755B /* recipe-book.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BEA481289F418C0058755B /* recipe-book.json */; };
+		C7E3DCE928A2978B00DDD5C7 /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3DCE828A2978B00DDD5C7 /* ModifyMainInformationView.swift */; };
+		C7E536A928A57FA50097DA25 /* ModifyDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E536A828A57FA50097DA25 /* ModifyDirectionView.swift */; };
+		C7ED989628A2B6E300EC1304 /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED989528A2B6E300EC1304 /* ModifyIngredientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C70D2872289EAAFE007A4F30 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C725F8F628A002C1004A99F0 /* ModifyRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeView.swift; sourceTree = "<group>"; };
 		C731789C289C38B10036DD8D /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		C7376661289C4F2500A71929 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		C7376663289C7DAF00A71929 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		C746CDF628A2C86E00C79D57 /* ModifyComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyComponentsView.swift; sourceTree = "<group>"; };
 		C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryView.swift; sourceTree = "<group>"; };
 		C797A983288E0098000FE4FA /* Canopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C797A986288E0098000FE4FA /* CanopyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanopyApp.swift; sourceTree = "<group>"; };
@@ -38,6 +45,9 @@
 		C7BEA47A289F3DCE0058755B /* LottieFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFiles.swift; sourceTree = "<group>"; };
 		C7BEA480289F418C0058755B /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = ../../../../../../Downloads/recipes.json; sourceTree = "<group>"; };
 		C7BEA481289F418C0058755B /* recipe-book.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "recipe-book.json"; path = "../../../../../../Downloads/recipe-book.json"; sourceTree = "<group>"; };
+		C7E3DCE828A2978B00DDD5C7 /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
+		C7E536A828A57FA50097DA25 /* ModifyDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyDirectionView.swift; sourceTree = "<group>"; };
+		C7ED989528A2B6E300EC1304 /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +65,39 @@
 		C70D2871289EAAE8007A4F30 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				C7BEA47A289F3DCE0058755B /* LottieFiles.swift */,
 				C70D2872289EAAFE007A4F30 /* CardView.swift */,
 			);
 			path = Submodules;
 			sourceTree = "<group>";
 		};
-		C7317899289C35120036DD8D /* Views */ = {
+		C725F8F428A0000E004A99F0 /* ExploreRecipes */ = {
 			isa = PBXGroup;
 			children = (
 				C797A988288E0098000FE4FA /* RecipesListView.swift */,
 				C7376661289C4F2500A71929 /* RecipeDetailView.swift */,
 				C781DAEE289EB0AF0084A915 /* RecipeCategoryView.swift */,
+			);
+			path = ExploreRecipes;
+			sourceTree = "<group>";
+		};
+		C725F8F528A00186004A99F0 /* ModifyRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				C725F8F628A002C1004A99F0 /* ModifyRecipeView.swift */,
+				C7E3DCE828A2978B00DDD5C7 /* ModifyMainInformationView.swift */,
+				C746CDF628A2C86E00C79D57 /* ModifyComponentsView.swift */,
+				C7ED989528A2B6E300EC1304 /* ModifyIngredientView.swift */,
+				C7E536A828A57FA50097DA25 /* ModifyDirectionView.swift */,
+			);
+			path = ModifyRecipes;
+			sourceTree = "<group>";
+		};
+		C7317899289C35120036DD8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C725F8F428A0000E004A99F0 /* ExploreRecipes */,
+				C725F8F528A00186004A99F0 /* ModifyRecipes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,7 +163,6 @@
 			children = (
 				C7BEA481289F418C0058755B /* recipe-book.json */,
 				C7BEA480289F418C0058755B /* recipes.json */,
-				C7BEA47A289F3DCE0058755B /* LottieFiles.swift */,
 			);
 			path = LottieFiles;
 			sourceTree = "<group>";
@@ -218,7 +249,12 @@
 				C7BEA47B289F3DCE0058755B /* LottieFiles.swift in Sources */,
 				C7376662289C4F2500A71929 /* RecipeDetailView.swift in Sources */,
 				C731789D289C38B10036DD8D /* RecipeData.swift in Sources */,
+				C7E3DCE928A2978B00DDD5C7 /* ModifyMainInformationView.swift in Sources */,
+				C7ED989628A2B6E300EC1304 /* ModifyIngredientView.swift in Sources */,
+				C725F8F728A002C1004A99F0 /* ModifyRecipeView.swift in Sources */,
 				C797A989288E0098000FE4FA /* RecipesListView.swift in Sources */,
+				C7E536A928A57FA50097DA25 /* ModifyDirectionView.swift in Sources */,
+				C746CDF728A2C86E00C79D57 /* ModifyComponentsView.swift in Sources */,
 				C781DAEF289EB0AF0084A915 /* RecipeCategoryView.swift in Sources */,
 				C797A987288E0098000FE4FA /* CanopyApp.swift in Sources */,
 				C70D2873289EAAFE007A4F30 /* CardView.swift in Sources */,

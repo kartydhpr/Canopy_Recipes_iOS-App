@@ -24,6 +24,10 @@ struct Recipe: Identifiable{
         self.init(mainInformation: MainInformation(name: "", description: "", author: "", category: .breakfast), ingredients: [], directions: [])
     }
     
+    var isValid: Bool{
+        mainInformation.isValid && !ingredients.isEmpty && !directions.isEmpty
+    }
+    
 }
 
 struct MainInformation{
@@ -38,9 +42,13 @@ struct MainInformation{
         case dinner = "Dinner"
         case treats = "Treats"
     }
+    
+    var isValid: Bool{
+        !name.isEmpty && !description.isEmpty && !author.isEmpty
+    }
 }
 
-struct Ingredient{
+struct Ingredient: RecipeComponent{
     var name: String
     var quantity: Double
     var unit: Unit
@@ -60,7 +68,6 @@ struct Ingredient{
         }
     }
     
-    
     enum Unit: String, CaseIterable{
         case oz = "Ounces"
         case g = "Grams"
@@ -71,11 +78,32 @@ struct Ingredient{
         
         var singularName: String { return String(rawValue.dropLast())}
     }
+    
+    init(name: String, quantity: Double, unit: Unit){
+        self.name = name
+        self.quantity = quantity
+        self.unit = unit
+    }
+    
+    init(){
+        self.init(name: "", quantity: 0.0, unit: .none)
+    }
+    
+    
 }
 
-struct Direction{
+struct Direction: RecipeComponent{
     var description: String
     var isOptional: Bool
+    
+    init(description: String, isOptional: Bool) {
+        self.description = description
+        self.isOptional = isOptional
+      }
+     
+      init() {
+        self.init(description: "", isOptional: false)
+      }
 }
 
 

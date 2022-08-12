@@ -23,7 +23,7 @@ struct CardView: View {
                     .padding()
             }
         }
-        .frame(width: 170, height: 170)
+        .frame(width: 165, height: 165)
         .background(Color.white)
         .cornerRadius(17.0)
         .shadow(color: Color.gray, radius: 5)    }

@@ -10,4 +10,20 @@ import Foundation
 class RecipeData: ObservableObject{
     @Published var recipes = Recipe.testRecipes
     
+    func getRecipes(for category: MainInformation.Category) -> [Recipe]{
+        var filteredRecipe = [Recipe]()
+        for recipe in recipes{
+            if recipe.mainInformation.category == category{
+                filteredRecipe.append(recipe)
+            }
+        }
+        return filteredRecipe
+    }
+    
+    func add(recipe: Recipe){
+        if recipe.isValid{
+            recipes.append(recipe)
+        }
+    }
+    
 }

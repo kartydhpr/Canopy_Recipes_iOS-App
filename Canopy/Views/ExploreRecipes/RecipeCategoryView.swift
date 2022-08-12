@@ -20,10 +20,10 @@ struct RecipeCategoryView: View {
                 .bold()
             HStack(spacing: 20){
                 NavigationLink(destination: RecipesListView(category: .breakfast).environmentObject(recipeData), label: {
-                    CardView(cardName: "Breakfast", imageName: "cup.and.saucer.fill")
+                    CardView(cardName: "Breakfast", imageName: "sunrise.fill")
                 })
                 NavigationLink(destination: RecipesListView(category: .lunch).environmentObject(recipeData), label: {
-                    CardView(cardName: "Lunch", imageName: "takeoutbag.and.cup.and.straw.fill")
+                    CardView(cardName: "Lunch", imageName: "cloud.sun.fill")
                 })
             }
             HStack(spacing: 20){
@@ -39,7 +39,6 @@ struct RecipeCategoryView: View {
         }
         .navigationTitle("Categories")
         .navigationBarHidden(false)
-        
     }
   }
 }

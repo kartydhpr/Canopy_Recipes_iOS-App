@@ -29,7 +29,7 @@ struct RecipeDetailView: View {
                         Spacer()
                     }
                     HStack {
-                        LottieView(name: "recipe-book", loopMode: .repeatBackwards(2.5)).frame(height: 120)
+                        LottieView(name: "recipe-book", loopMode: .repeatBackwards(1.5)).frame(height: 120)
                             .padding(.leading, 200)
                     }
                 }
