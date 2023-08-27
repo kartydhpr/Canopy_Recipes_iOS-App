@@ -43,7 +43,7 @@ struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyC
           VStack(spacing:20){
             Image(systemName: "note.text.badge.plus").font(.system(size: 100))
             Text("Add the first \(Component.singularName())").font(.title2).bold()
-          }.foregroundColor(.orange)
+          }.foregroundColor(AppColor.newRecListMain)
         })
         Spacer()
       } else {
@@ -56,8 +56,20 @@ struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyC
         List {
           ForEach(components.indices, id: \.self) { index in
             let component = components[index]
+            let editComponentView = DestinationView(component: $components[index]) { _ in
+                return
+                }
+                .navigationTitle("Edit" + "\(Component.singularName().capitalized)")
+                NavigationLink(component.description, destination: editComponentView)
             Text(component.description)
           }
+          .onDelete { components.remove(atOffsets: $0) }
+          .onMove { indices, newOffset in
+              components.move(fromOffsets: indices, toOffset: newOffset)
+          }
+          
+          .listRowBackground(AppColor.mainColor)
+                .foregroundColor(AppColor.accentColor)
           NavigationLink("Add another \(Component.singularName())",
                          destination: addComponentView)
             .buttonStyle(PlainButtonStyle())

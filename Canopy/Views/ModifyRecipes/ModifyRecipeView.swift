@@ -10,7 +10,7 @@ import SwiftUI
 struct ModifyRecipeView: View {
     @Binding var recipe: Recipe
     @State private var selection = Selection.main
-    
+        
     var body: some View {
         VStack{
             Picker("Select recipe component", selection: $selection)
@@ -24,7 +24,7 @@ struct ModifyRecipeView: View {
             
             switch selection {
                 case .main:
-                    ModifyMainInformationView(mainInformation: $recipe.mainInformation)
+                ModifyMainInformationView(mainInformation: $recipe.mainInformation)
                 case .ingredients:
                     ModifyComponentsView<Ingredient, ModifyIngredientView>(components: $recipe.ingredients)
                 case .directions:
@@ -32,7 +32,7 @@ struct ModifyRecipeView: View {
             }
             
             Spacer()
-        }
+        }//.background(AppColor.newRecListMain)
     }
     enum Selection{
         case main, ingredients, directions

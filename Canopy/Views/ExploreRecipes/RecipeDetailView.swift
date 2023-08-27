@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
-    let recipe: Recipe
-    
-    let listBackgroundColor = AppColor.mainColor
-    let ListForegroundColor = AppColor.accentColor
-    let headerBackgroundColor = AppColor.secondaryMainColor
-    let headerForegroundColor = AppColor.secondaryAccentColor
+    @Binding var recipe: Recipe
 
-    
+    let listBackgroundColor = AppColor.directionsMain
+    let ListForegroundColor = AppColor.directionsAccent
+    let headerBackgroundColor = AppColor.mainColor
+    let headerForegroundColor = AppColor.accentColor
+
+    @State private var isPresenting = false
+
     var body: some View {
         VStack{
             VStack(spacing:-20){
@@ -46,9 +47,36 @@ struct RecipeDetailView: View {
                     Spacer()
                 }
             }
+            .toolbar {
+                ToolbarItem {
+                    HStack {
+                    Button("Edit") {
+                        isPresenting = true
+                    }
+                        Button(action: {recipe.isFavorite.toggle()
+                        }){
+                            Image(systemName: recipe.isFavorite ? "heart.fill" : "heart")
+                        }
+                    }
+                }
+            }
+            .sheet(isPresented: $isPresenting) {
+                    NavigationView {
+                      ModifyRecipeView(recipe: $recipe)
+                        .toolbar {
+                          ToolbarItem(placement: .confirmationAction) {
+                            Button("Save") {
+                              isPresenting = false
+                            }
+                          }
+                        }
+                        .navigationTitle("Edit Recipe")
+                    }
+                  }
             .background(headerBackgroundColor)
             .foregroundColor(headerForegroundColor)
             .padding(.top, -60)
+            
             
             List{
                 Section(header: Text("Ingredients")){
@@ -77,8 +105,10 @@ struct RecipeDetailView: View {
 }
 
 struct RecipeDetailView_Previews: PreviewProvider {
-    @State static var recipe = Recipe.testRecipes[0]
-    static var previews: some View {
-        RecipeDetailView(recipe: recipe)
+  @State static var recipe = Recipe.testRecipes[0]
+  static var previews: some View {
+    NavigationView {
+      RecipeDetailView(recipe: $recipe)
     }
+  }
 }

@@ -14,15 +14,15 @@ struct RecipesListView: View {
     
     let category: MainInformation.Category
     
-    let listBackgroundColor = AppColor.secondaryMainColor
-    let ListForegroundColor = AppColor.secondaryAccentColor
+    let listBackgroundColor = AppColor.mainColor
+    let ListForegroundColor = AppColor.accentColor
     
     var body: some View {
             List{
                 ForEach(recipeData.getRecipes(for: category)){
                     recipe in
-                    NavigationLink(recipe.mainInformation.name,  destination: RecipeDetailView(recipe: recipe))
-                }
+                    NavigationLink(recipe.mainInformation.name,
+                                         destination: RecipeDetailView(recipe: binding(for: recipe)))                }
                 .foregroundColor(ListForegroundColor)
                 .listRowBackground(listBackgroundColor)
             }
@@ -34,7 +34,7 @@ struct RecipesListView: View {
                     }, label: {
                         Image(systemName: "plus.circle.fill")
                             .font(.title2)
-                            .foregroundColor(AppColor.secondaryAccentColor)
+                            .foregroundColor(AppColor.newRecListMain)
                     })
                 }
             })
@@ -74,8 +74,8 @@ extension RecipesListView{
 //        }
 //        return filteredRecipe
 //    }
-//    
-    
+//
+//
 //    private var recipes: [Recipe]{
 //        recipeData.recipes(for: category)
 //    }
@@ -84,6 +84,12 @@ extension RecipesListView{
         "\(category.rawValue) Recipes"
     }
     
+    func binding(for recipe: Recipe) -> Binding<Recipe> {
+        guard let index = recipeData.getRecipeIndex(for: recipe) else {
+          fatalError("Recipe not found")
+        }
+        return $recipeData.recipes[index]
+      }
 }
 
 
